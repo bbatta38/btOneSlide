@@ -1,0 +1,21 @@
+{
+  "name": "btOneSlide",
+  "version": "1.0.0",
+  "description": "move one slide",
+  "main": "js/main.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slide"
+  ],
+  "author": "bbatta",
+  "license": "MIT"
+}

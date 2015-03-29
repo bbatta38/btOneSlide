@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-conrib-concat',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json btOneSlide@1.0.0 No repository field.
+6 warn package.json btOneSlide@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'grunt-conrib-concat', null ]
+9 verbose cache add name=undefined spec="grunt-conrib-concat" args=["grunt-conrib-concat",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt-conrib-concat',
+10 verbose parsed url   path: 'grunt-conrib-concat',
+10 verbose parsed url   href: 'grunt-conrib-concat' }
+11 silly lockFile da1d6e91-grunt-conrib-concat grunt-conrib-concat
+12 verbose lock grunt-conrib-concat C:\Users\kimbyungsoo\AppData\Roaming\npm-cache\da1d6e91-grunt-conrib-concat.lock
+13 silly lockFile da1d6e91-grunt-conrib-concat grunt-conrib-concat
+14 silly lockFile da1d6e91-grunt-conrib-concat grunt-conrib-concat
+15 verbose addNamed [ 'grunt-conrib-concat', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 74403ced-grunt-conrib-concat grunt-conrib-concat@
+18 verbose lock grunt-conrib-concat@ C:\Users\kimbyungsoo\AppData\Roaming\npm-cache\74403ced-grunt-conrib-concat.lock
+19 silly addNameRange { name: 'grunt-conrib-concat', range: '*', hasData: false }
+20 verbose request where is /grunt-conrib-concat
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id e034d729f74d2c80
+23 verbose url raw /grunt-conrib-concat
+24 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-conrib-concat' ]
+25 verbose url resolved https://registry.npmjs.org/grunt-conrib-concat
+26 verbose request where is https://registry.npmjs.org/grunt-conrib-concat
+27 info trying registry request attempt 1 at 18:39:50
+28 http GET https://registry.npmjs.org/grunt-conrib-concat
+29 http 404 https://registry.npmjs.org/grunt-conrib-concat
+30 verbose headers { date: 'Fri, 27 Mar 2015 09:39:59 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '51',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   'x-served-by': 'cache-nrt6122-NRT',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1427449198.260333,VS0,VE747',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Fri, 27 Mar 2015 09:39:59 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '51',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-nrt6122-NRT',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1427449198.260333,VS0,VE747',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly lockFile 74403ced-grunt-conrib-concat grunt-conrib-concat@
+33 silly lockFile 74403ced-grunt-conrib-concat grunt-conrib-concat@
+34 error 404 404 Not Found: grunt-conrib-concat
+34 error 404
+34 error 404 'grunt-conrib-concat' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'btOneSlide'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Windows_NT 6.1.7601
+36 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-conrib-concat" "--save-dev"
+37 error cwd D:\work\btOneSlide
+38 error node -v v0.10.32
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]
