@@ -2,6 +2,10 @@
 
 Jquery 슬라이드 plugin
 
+http://bbatta38.github.io/btOneSlide/
+
+예제 : 파일 다운 후 index.html 실행
+
 ## 설치
 ```html
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
