@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Btoneslide by bbatta38</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Btoneslide</h1>
+        <h2>Jquery 슬라이드 plugin</h2>
+        <a href="https://github.com/bbatta38/btOneSlide" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="btoneslide" class="anchor" href="#btoneslide" aria-hidden="true"><span class="octicon octicon-link"></span></a>btOneSlide</h1>
+
+<p>Jquery 슬라이드 plugin</p>
+
+<h2>
+<a id="설치" class="anchor" href="#%EC%84%A4%EC%B9%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>설치</h2>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/jquery-1.8.0.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/jquery.easing.1.3.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>js/jquery.btOneSlide.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h2>
+<a id="기본-사용법" class="anchor" href="#%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>기본 사용법</h2>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-k">function</span>(){
+    $(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    });
+});</pre></div>
+
+<h2>
+<a id="옵션" class="anchor" href="#%EC%98%B5%EC%85%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>옵션</h2>
+
+<p><strong>mode</strong> : 슬라이드의 가로세로 설정</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    mode <span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>horizontal<span class="pl-pds">"</span></span> <span class="pl-c">// or "vertical"</span>
+});</pre></div>
+
+<p><strong>container</strong>: 슬라이드 될 컨테이너(여러개 선택 가능)</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    container<span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>.first, .second, .third<span class="pl-pds">"</span></span> <span class="pl-c">// 복수선택 할 경우</span>
+    <span class="pl-c">//설정하지 않을 경우 wrap의 자식 객채 중 ul로 지정</span>
+});</pre></div>
+
+<p><strong>startIndex</strong> : 시작 인덱스(0부터 시작)</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    startIndex <span class="pl-k">:</span> <span class="pl-c1">0</span>
+    <span class="pl-c">// 인덱스의 범위가 child의 갯수를 넘어갈 경우 마지막 인덱스로 설정</span>
+});</pre></div>
+
+<p><strong>controller</strong> : 양쪽 화살표 컨트롤러</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    controller<span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>.oneSlideControls<span class="pl-pds">"</span></span> <span class="pl-c">// default</span>
+});</pre></div>
+
+<p><strong>pager</strong> : 페이지 표시</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    pager<span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>.pager<span class="pl-pds">"</span></span>
+});</pre></div>
+
+<p><strong>hasPagerClass</strong> : 페이저의 각각의 li에 on 클래스의 적용여부</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    hasPagerClass<span class="pl-k">:</span><span class="pl-c1">false</span> <span class="pl-c">// or true</span>
+    <span class="pl-c">// 이 옵션을 false로 설정했을경우 on클래스가 적용되지 않고 opacity값이 1로 설정됌</span>
+});</pre></div>
+
+<p><strong>loop</strong> : 무한루프</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    loop<span class="pl-k">:</span><span class="pl-c1">true</span> <span class="pl-c">// or false</span>
+});</pre></div>
+
+<p><strong>ease</strong> : easing 값(jquery ease 참조)</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    ease<span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">"</span>linear<span class="pl-pds">"</span></span> <span class="pl-c">// or jquery easing</span>
+});</pre></div>
+
+<p><strong>animateSpeed</strong> : 슬라이드 속도</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    animateSpeed<span class="pl-k">:</span><span class="pl-c1">300</span> <span class="pl-c">// or 400, 500 ...</span>
+});</pre></div>
+
+<p><strong>auto</strong> : 자동 슬라이드 설정</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    auto<span class="pl-k">:</span><span class="pl-c1">false</span> <span class="pl-c">// or true</span>
+});</pre></div>
+
+<p><strong>intervalTime</strong> : 자동 슬라이드 되는 시간간격</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    intervalTime<span class="pl-k">:</span><span class="pl-c1">5000</span> <span class="pl-c">// or 3000, 4000 ...</span>
+});</pre></div>
+
+<p><strong>windowFit</strong> : 슬라이드 크기를 윈도우에 맞출것인지에 대한 여부</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    windowFit<span class="pl-k">:</span><span class="pl-c1">false</span> <span class="pl-c">//or true</span>
+});</pre></div>
+
+<p><strong>onSlideReadyComplete</strong> : 슬라이드 준비가 다 끝난 시점</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    <span class="pl-en">onSlideReadyComplete</span>:<span class="pl-k">function</span>(){
+        <span class="pl-c">// on your code</span>
+    }
+});</pre></div>
+
+<p><strong>onChangeStart</strong> : 모션 시작 시점</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    <span class="pl-en">onChangeStart</span>:<span class="pl-k">function</span>(<span class="pl-smi">$sl</span>, <span class="pl-smi">$index</span>, <span class="pl-smi">$oldIndex</span>){
+        <span class="pl-c">// $sl : 슬라이드 객체</span>
+        <span class="pl-c">// $index : 현재의 객체 인덱스 값</span>
+        <span class="pl-c">// $oldIndex : 이전의 객체 인덱스 값</span>
+    }
+});</pre></div>
+
+<p><strong>onChangeEnd</strong> : 모션 끝 시점</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s"><span class="pl-pds">"</span>.wrap<span class="pl-pds">"</span></span>).btOneSlide({
+    <span class="pl-en">onChangeEnd</span>:<span class="pl-k">function</span>(<span class="pl-smi">$sl</span>, <span class="pl-smi">$index</span>, <span class="pl-smi">$oldIndex</span>){
+        <span class="pl-c">// $sl : 슬라이드 객체</span>
+        <span class="pl-c">// $index : 현재의 객체 인덱스 값</span>
+        <span class="pl-c">// $oldIndex : 이전의 객체 인덱스 값</span>
+    }
+});</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/bbatta38/btOneSlide/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/bbatta38/btOneSlide/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/bbatta38/btOneSlide"></a> is maintained by <a href="https://github.com/bbatta38">bbatta38</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
