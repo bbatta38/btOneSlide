@@ -139,3 +139,5 @@ $(".wrap").btOneSlide({
     }
 });
 ```
+
+e-mail : bbatta38@gmail.com
